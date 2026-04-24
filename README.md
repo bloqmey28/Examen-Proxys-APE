@@ -66,14 +66,21 @@ docker ps
 
 ## 📸 Evidencias de Funcionamiento
 
-### 1. Funcionamiento del Proxy (Acceso Web)
-*(Insertar captura de la web cargando en localhost:80)*
+### 1. Interfaz del Panel de Control (Punto de Entrada)
+![APE Dashboard Top](www/assets/screenshots/dashboard_top.png)
+![APE Dashboard Bottom](www/assets/screenshots/dashboard_bottom.png)
 
-### 2. Balanceo de Carga (Headers)
-*(Insertar captura del Inspector de Elementos -> Network -> Response Headers mostrando apache 1 y apache 2)*
+### 2. Auditoría de Balanceo de Carga
+Para garantizar la transparencia, el sistema firma cada respuesta con la identidad del servidor que la procesó:
 
-### 3. Red Aislada (Docker Inspect)
-*(Insertar captura de docker network inspect dmz_network mostrando los contenedores conectados)*
+| Nodo Apache 1 | Nodo Apache 2 |
+| :---: | :---: |
+| ![Node 1 Proof](www/assets/screenshots/audit_node_1.png) | ![Node 2 Proof](www/assets/screenshots/audit_node_2.png) |
+
+### 3. Verificación de Optimización (Cache HIT)
+La siguiente captura de los logs del contenedor `ape_nginx` demuestra que el motor de caché está funcionando correctamente, sirviendo peticiones repetidas con estado **HIT**:
+
+![Cache HIT Logs](www/assets/screenshots/cache_logs.png)
 
 ---
 

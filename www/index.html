@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APE Network - Panel de Control</title>
+    <style>
+        :root {
+            --primary: #a855f7;
+            --bg: #0f172a;
+            --card: rgba(30, 41, 59, 0.7);
+        }
+        body {
+            background-color: var(--bg);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: var(--card);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(168, 85, 247, 0.2);
+            text-align: center;
+        }
+        h1 { color: var(--primary); margin-bottom: 10px; }
+        p { color: #94a3b8; font-size: 1.1rem; line-height: 1.6; }
+        .visual-content {
+            margin: 30px 0;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid var(--primary);
+        }
+        img, video {
+            width: 100%;
+            display: block;
+        }
+        .badge {
+            display: inline-block;
+            padding: 5px 15px;
+            background: var(--primary);
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            color: #64748b;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>APE Network Infrastructure</h1>
+        <div class="badge">NODO DE ALTA DISPONIBILIDAD</div>
+        <p>Este nodo forma parte de una arquitectura balanceada diseñada para garantizar la máxima disponibilidad de servicios críticos. La infraestructura utiliza un Proxy Inverso Nginx en alta disponibilidad.</p>
+        
+        <div class="visual-content">
+            <img src="assets/server_landscape.png" alt="Infraestructura de Servidores">
+        </div>
+
+        <p>A continuación se muestra un clip de monitorización de red:</p>
+        
+        <div class="visual-content">
+            <!-- Video de ejemplo de monitorización -->
+            <video autoplay muted loop>
+                <source src="assets/monitorizacion.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 APE Security Systems - Examen de Arquitectura de Redes
+    </footer>
+</body>
+</html>

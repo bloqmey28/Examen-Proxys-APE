@@ -77,11 +77,6 @@ Para garantizar la transparencia, el sistema firma cada respuesta con la identid
 | :---: | :---: |
 | ![Node 1 Proof](www/assets/screenshots/audit_node_1.png) | ![Node 2 Proof](www/assets/screenshots/audit_node_2.png) |
 
-### 3. Verificación de Optimización (Cache HIT)
-La siguiente captura de los logs del contenedor `ape_nginx` demuestra que el motor de caché está funcionando correctamente, sirviendo peticiones repetidas con estado **HIT**:
-
-![Cache HIT Logs](www/assets/screenshots/cache_logs.png)
-
 ---
 
 **APE Systems - Architecture Exam 2026**
